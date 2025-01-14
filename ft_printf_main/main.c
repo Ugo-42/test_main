@@ -32,7 +32,7 @@ int main(void)
     ft_count = ft_printf(null_str);
     real_count = printf(null_str);
     printf("ft_printf count: %i, real printf count: %i\n\n", ft_count, real_count);
-
+    	
 	// Test: void
     ft_count = ft_printf(void_str);
     real_count = printf(void_str);
@@ -56,6 +56,11 @@ int main(void)
 	// Test: string%
     ft_count = ft_printf("%");
     real_count = printf("%");
+    printf("ft_printf count: %i, real printf count: %i\n\n", ft_count, real_count);
+
+    	// Test: omg
+    ft_count = ft_printf("% s\n", "Ah, Dommage!");
+    real_count = printf("% s\n", "Ah, Dommage!");
     printf("ft_printf count: %i, real printf count: %i\n\n", ft_count, real_count);
 	*/
 	
